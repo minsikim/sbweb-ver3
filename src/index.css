@@ -1,0 +1,95 @@
+/* #region ------ FONT IMPORT SETTINGS ------ */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+/* "Noto Sans KR" */
+
+@font-face{
+    font-family: "HGG80g";
+    src: url("assets/fonts/HGGGothicssi_Pro80g.ttf");
+}
+
+@font-face{
+    font-family: "HGG40g";
+    src: url("assets/fonts/HGGGoHint40g.ttf");
+}
+
+
+
+/* #endregion */
+/* #region ------ COLOR SETTINGS ------ */
+
+:root{
+    --main-bg: rgb(255, 255, 255);
+    --main-bg-50: rgba(243,241,223,0.5);
+
+    --main-text: rgb(121,120,111);
+    --main-text-50: rgba(0,0,0,0.5);
+    --main-text-20: rgba(0,0,0,0.2);
+
+    --title-text: rgb(75, 75, 75);
+
+    --main-red: rgb(252, 65, 52);
+    --main-red-50: rgba(255,0,0,0.5);
+    --main-red-20: rgba(255,0,0,0.2);
+
+    --main-orange: rgb(255, 148, 60);
+    --main-orange-50: rgba(255, 118, 0, 0.5);
+    --main-orange-20: rgba(255, 118, 0, 0.2);
+
+    --main-yellow: rgb(244,244,179);
+    --main-yellow-50: rgba(245, 255, 0, 0.5);
+    --main-yellow-20: rgba(245, 255, 0, 0.2);
+
+    --main-green: rgb(203,224,194);
+    --main-green-50: rgba(41, 156, 78, 0.5); 
+    --main-green-20: rgba(41, 156, 78, 0.2);
+
+    --main-lightgreen: rgb(228,236,189);
+    --main-lightgreen-50: rgba(163, 213, 52, 0.5);
+    --main-lightgreen-20: rgba(163, 213, 52, 0.2);
+
+    --main-turquoise: rgb(185,228,203);
+    --main-turquoise-50: rgba(52, 196, 157, 0.5);
+    --main-turquoise-20: rgba(52, 196, 157, 0.2);
+
+    --main-blue: rgb(195,228,230);
+    --main-blue-50: rgba(0, 177, 255, 0.5);
+    --main-blue-20: rgba(0, 177, 255, 0.2);
+}
+
+
+
+/* #endregion */
+/* #region ------ GENERAL SETTINGS ------ */
+
+body{
+    background-color: rgb(243,241,223);
+    /* background-color: var(--main-bg); */
+    color: rgb(121,120,111);
+    color: var(--main-text);
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "HGG40g", "Noto Sans KR", sans-serif;
+    color: rgb(75, 75, 75);
+    /* color: var(--title-text); */
+    line-height: 1.5;
+}
+p{
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -.3px;
+    word-break: keep-all;
+}
+strong{
+    font-family: "HGG80g", "HGG40g", "Noto Sans KR", sans-serif;
+}
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+span.underline{
+    display: inline-block;
+    border-bottom: 5px solid rgba(255,0,0,0.2);
+    /* border-bottom: 5px solid var(--main-red-20); */
+}
+
+/* #endregion */

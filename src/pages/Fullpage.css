@@ -1,0 +1,19 @@
+/* #region ------ FULLPAGE SETTINGS ------ */
+
+#fp-nav.right {
+    right: 30px;
+    opacity: 0.5;
+}
+
+
+/* #endregion */
+/* #region ------ SECTION SETTINGS ------ */
+
+.section .MainTitle {
+    position: relative;
+    z-index: 200;
+    padding: 20px 80px;
+}
+
+
+/* #endregion */
