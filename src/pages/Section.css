@@ -1,0 +1,38 @@
+.section{
+    position: relative;
+}
+
+.BackgroundVideo{
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    /* z-index: 300; */
+}
+.BackgroundVideo video{
+    /* z-index: -1; */
+    min-width: 100%;
+    min-height: 100%;
+    /* filter: grayscale(1) brightness(0.5);
+    -webkit-filter: grayscale(0.5); */
+    /* opacity: 0.5; */
+}
+.MainTitle{
+    position: absolute;
+    text-shadow: 0px 0px 150px var(--main-text);
+    z-index: 2;
+    white-space: pre-line;
+    margin: 10px;
+    padding: 0px;
+    line-height: 1;
+}
+.white{
+    color: white;
+}
+.black{
+    color: #222222;
+}
+
+

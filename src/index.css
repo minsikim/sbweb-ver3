@@ -11,8 +11,22 @@
     font-family: "HGG40g";
     src: url("assets/fonts/HGGGoHint40g.ttf");
 }
-
-
+@font-face{
+    font-family: "NNS_EB";
+    src: url("assets/fonts/NanumSquareEB.ttf");
+}
+@font-face{
+    font-family: "NNS_B";
+    src: url("assets/fonts/NanumSquareB.ttf");
+}
+@font-face{
+    font-family: "NNS_R";
+    src: url("assets/fonts/NanumSquareR.ttf");
+}
+@font-face{
+    font-family: "NNS_L";
+    src: url("assets/fonts/NanumSquareL.ttf");
+}
 
 /* #endregion */
 /* #region ------ COLOR SETTINGS ------ */
@@ -59,28 +73,39 @@
 
 
 /* #endregion */
+/* #region ------ FONT HACK SETTINGS ------ */
+
+.win .entry-content{
+    transform: rotate(-0.0000000001deg);
+    text-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+html{
+    -webkit-text-size-adjust: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* #endregion */
 /* #region ------ GENERAL SETTINGS ------ */
 
 body{
-    background-color: rgb(243,241,223);
-    /* background-color: var(--main-bg); */
+    /* background-color: rgb(243,241,223); */
     color: rgb(121,120,111);
     color: var(--main-text);
     text-align: center;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: "HGG40g", "Noto Sans KR", sans-serif;
+    font-family: "NNS_B", "HGG40g", "Noto Sans KR", sans-serif;
     color: rgb(75, 75, 75);
-    /* color: var(--title-text); */
+    color: var(--title-text);
     line-height: 1.5;
 }
 p{
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "NNS_R", "Noto Sans KR", sans-serif;
     letter-spacing: -.3px;
     word-break: keep-all;
 }
 strong{
-    font-family: "HGG80g", "HGG40g", "Noto Sans KR", sans-serif;
+    font-family: "NNS_B", "HGG80g", "HGG40g", "Noto Sans KR", sans-serif;
 }
 a, a:hover{
     text-decoration: none;

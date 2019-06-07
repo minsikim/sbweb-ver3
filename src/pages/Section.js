@@ -1,13 +1,14 @@
 import React from "react";
 
-class MySection extends React.Component {
+class Section extends React.Component {
     render() {
       return (
         <div className="section">
           <h3>{this.props.content}</h3>
+          {this.props.children}
         </div>
       );
     }
   }
 
-  export default MySection;
+  export default Section;

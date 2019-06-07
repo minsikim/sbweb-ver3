@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100px;
+    height: 80px;
     z-index: 70;
     width: 100%;
     padding: 0;
@@ -13,7 +13,7 @@
     display: flexbox;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: var(--main-bg); */
+    background-color: rgba(255,255,255,0.8);
 }
 #navigation ul{
     white-space: pre-line;
@@ -25,8 +25,8 @@
     flex-direction: row;
     padding: 0px 25px;
     height: 100%;
-    font-family: "HGG40g", "Noto Sans KR", sans-serif;
-    font-size: 120%;
+    font-family: "NNS_R", "HGG40g", "Noto Sans KR", sans-serif;
+    font-size: 110%;
     transition: color .7s;
     -webkit-transition: color .7s;
     -moz-transition: color .7s;
@@ -44,11 +44,12 @@
 #navigation li:hover {
     color: rgb(75, 75, 75);
     color: var(--title-text);
+    font-family: "NNS_B", "HGG80g", "HGG40g", "Noto Sans KR", sans-serif !important;
 }
 #navigation li.active {
     color: rgb(75, 75, 75);
     color: var(--title-text);
-    font-family: "HGG80g", "HGG40g", "Noto Sans KR", sans-serif !important;
+    font-family: "NNS_EB", "HGG80g", "HGG40g", "Noto Sans KR", sans-serif !important;
 }
 #navigation li .NavCircle{
     opacity: 0;
