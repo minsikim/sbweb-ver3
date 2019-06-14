@@ -11,18 +11,19 @@ class ProductCard extends Component{
         open: false
     }
     render(){
-        const {name, detail, description, links, image} = this.props.data
-        const linksMap = this.props.data.links.map((obj, idx)=>{
-            return 
-        })
+        // const {name, detail, description, links, image} = this.props.data;
+        const {name, description, links, image} = this.props.data;
+        // const linksMap = links.map((obj, idx)=>{
+        //     return 
+        // })
         return(
             <div className={"ProductCard"}>
-                <img src={require("../../assets/products/"+this.props.data.image)} alt=""/>
+                <img className="ProductImage" src={require("../../assets/products/"+image)} alt=""/>
                 <div className="ProductContent">
-                    <h3>{this.props}</h3>
-                    <p></p>
-                    {this.state.open ? detail : null}
-                    {linksMap}
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                    {/* {this.state.open ? detail : null} */}
+                    {/* {linksMap} */}
                 </div>
             </div>
         )

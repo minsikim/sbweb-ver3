@@ -92,6 +92,7 @@ body{
     color: rgb(121,120,111);
     color: var(--main-text);
     text-align: center;
+    margin: 0px;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: "NNS_B", "HGG40g", "Noto Sans KR", sans-serif;

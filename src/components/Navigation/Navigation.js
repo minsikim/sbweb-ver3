@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 //import Components
 
+import data from "../../data/data.json";
 
 //import Style classNamees
 import './Navigation.css';
@@ -11,9 +12,12 @@ import './Navigation.css';
 class Navigation extends Component {
 
     render() {
+
+        const {navigation} = data;
+
         return (
             <ul id="navigation">
-                <li data-menuanchor="firstPage" className="active">
+                <li data-menuanchor={navigation[0]} className="active">
                     <div className="NavCircle"></div>
                     <a href="">
                         <svg id="nav-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.807 22.762">
@@ -40,19 +44,19 @@ class Navigation extends Component {
                         </svg>
                     </a>
                 </li>
-                <li data-menuanchor="secondPage">
+                <li >
                     <div className="NavCircle"></div>
-                    <a href="#P1">스낵토마토란?</a>
+                    <p onClick={() => this.props.navClick(3)}>스낵토마토란?></p>
                 </li>
-                <li data-menuanchor="3rdPage">
+                <li>
                     <div className="NavCircle"></div>
-                    <a href="#P2">상품 소개</a>
+                    상품 소개
                 </li>
-                <li data-menuanchor="4thPage">
+                <li>
                     <div className="NavCircle"></div>
                     <a href="#P3">재배 환경</a>
                 </li>
-                <li data-menuanchor="5thPage">
+                <li>
                     <div className="NavCircle"></div>
                     <a href="#P4">문 의</a>
                 </li>

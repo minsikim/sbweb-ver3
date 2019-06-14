@@ -1,4 +1,34 @@
 {
+    "navigation": [
+        {
+            "codeName": "section1",
+            "name": {
+                "ko": "홈",
+                "jp": "홈"
+            }
+        },
+        {
+            "codeName": "section2",
+            "name": {
+                "ko": "상품소개",
+                "jp": "상품소개"
+            }
+        },
+        {
+            "codeName": "section3",
+            "name": {
+                "ko": "재배환경",
+                "jp": "재배환경"
+            }
+        },
+        {
+            "codeName": "section4",
+            "name": {
+                "ko": "새봄소식",
+                "jp": "새봄소식"
+            }
+        }
+    ],
     "section1": {
         "name":{
             "ko": "홈",
@@ -9,7 +39,7 @@
         "products":[
             {
                 "name": "상품명1",
-                "despcrition": "짧은 설명글을 여기에 넣습니다.",
+                "description": "짧은 설명글을 여기에 넣습니다.",
                 "detail": [
                     {
                         "key": "세부정보1",
@@ -32,7 +62,7 @@
             },
             {
                 "name": "상품명2",
-                "despcrition": "짧은 설명글을 여기에 넣습니다.",
+                "description": "짧은 설명글을 여기에 넣습니다.",
                 "detail": [
                     {
                         "key": "세부정보1",
@@ -55,7 +85,7 @@
             },
             {
                 "name": "상품명3",
-                "despcrition": "짧은 설명글을 여기에 넣습니다.",
+                "description": "짧은 설명글을 여기에 넣습니다.",
                 "detail": [
                     {
                         "key": "세부정보1",
